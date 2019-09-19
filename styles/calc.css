@@ -1,0 +1,207 @@
+body {
+    color: rgb(80, 80, 80);
+    background-color: rgb(241, 245, 248);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    padding: 20px;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: rgb(20, 20, 20);
+    font-size: 24px;
+    margin: 0;
+}
+
+h2 {
+    color: rgb(20, 20, 20);
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+img.logo {
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+table.layout {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.layout tr {
+    border-top: 1px solid #e6e6e6;
+}
+
+table.layout tr:first-child {
+    border-top: 0;
+}
+
+table.layout td {
+    height: 40px;
+    padding: 10px 0;
+}
+
+.results table.layout td {
+    height: 20px;
+    padding: 10px 0;
+}
+
+table.layout.details td:nth-of-type(1) { width: 150px; }
+table.layout.details td:nth-of-type(2) { width: 213px; }
+table.layout.details td:nth-of-type(3) { width: 150px; }
+
+table.layout.option1 td:nth-of-type(1) { width: 150px; }
+table.layout.option1 td:nth-of-type(2) { width: 213px; }
+table.layout.option1 td:nth-of-type(3) { width: 150px; }
+table.layout.option1 td:nth-of-type(4) { width: 213px; }
+
+.results table.layout.option1 td:nth-of-type(1) { width: 150px; }
+.results table.layout.option1 td:nth-of-type(2) { width: 213px; }
+.results table.layout.option1 td:nth-of-type(3) { width: 150px; }
+.results table.layout.option1 td:nth-of-type(4) { width: 150px; }
+.results table.layout.option1 td:nth-of-type(5) { width: 150px; }
+.results table.layout.option1 td:nth-of-type(6) { width: 250px; }
+
+table.layout.option2 td:nth-of-type(1) { width: 150px; }
+table.layout.option2 td:nth-of-type(2) { width: 213px; }
+table.layout.option2 td:nth-of-type(3) { width: 150px; }
+table.layout.option2 td:nth-of-type(4) { width: 213px; }
+
+section {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+section .row {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #e6e6e6;
+    margin: 0;
+    padding: 2px 0;
+}
+
+section .row .cell {
+    flex: 1;
+    min-width: 200px;
+}
+
+section .row label {
+    float: left;
+    margin-top: 15px;
+    width: 50%;
+}
+
+section .row label .inputType {
+    margin-left: 10px;
+    width: 120px;
+    margin-top: 0px;
+    vertical-align: middle;
+}
+
+.currency {
+    float: left;
+    margin-top: 0;
+}
+
+.preInput {
+    border: 1px solid #d1d7db;
+    line-height: 1;
+    width: 20px;
+    background: #fff;
+    text-align: center;
+    margin: 5px 0;
+    padding: 10px 0;
+
+    display: block;
+    float: left;
+    border-right: 0;
+    border-radius: 2px 0 0 2px;
+    vertical-align: middle;
+}
+
+.postInput {
+    border: 1px solid #d1d7db;
+    line-height: 1;
+    width: 20px;
+    background: #fff;
+    text-align: center;
+    margin: 5px 0;
+    margin-left: -3px;
+    padding: 10px 0;
+
+    display: inline-block;
+    border-left: 0;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
+input {
+    border: 1px solid #d1d7db;
+    height: 34px;
+    width: 160px;
+    border-radius: 2px;
+    padding: 0 0 0 4px;
+    background: #f1f1f1;
+    vertical-align: middle;
+    margin: 5px 0;
+
+    font-size: 18px;
+}
+
+input.left {
+    border-left: 0;
+    padding-left: 0;
+    border-radius: 0 2px 2px 0;
+}
+
+input.large {
+    width: 300px;
+}
+
+input.full {
+    width: 181px;
+}
+
+button {
+    line-height: 40px;
+    min-width: 128px;
+    font-weight: 400;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #fff;
+    text-transform: none;
+    padding: 0 15px;
+    border: none;
+    text-shadow: none;
+    background: #3ddb93;
+    color: #fff;
+    font-size: 14px;
+}
+
+.border { border-left: 1px solid #e6e6e6!important; }
+.padded { padding-left: 10px!important; }
+.bold { font-weight: bold!important; }
+.red { color: red!important; }
+.green { color: green!important; }
+.center { text-align: center!important; }
+
+.actions {
+    margin-bottom: 100px;
+}
+
+@media print {
+
+    section {
+        margin-bottom: 0px;
+    }
+
+    .actions {
+        display: none;
+    }
+
+}
